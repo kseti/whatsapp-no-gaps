@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name whatsapp web - remove gaps
+@description Makeshift css style to remove unnecessary gaps from the WhatsApp web app.
+@license MIT
+@author k7 <k777@riseup.net>
+@version 0.0.1
+@homepage  https://github.com/kseti/whatsapp-no-gaps
+@namespace https://github.com/kseti
+==/UserStyle== */
+
+@-moz-document domain("web.whatsapp.com") {
+    @media not all and (display-mode: standalone) {
+        @media screen and (min-width: 1441px) {
+            .app-wrapper-web ._aigs:not(._as6h) {
+                top: 0;
+                width: 100%;
+                max-width: none;
+                height: 100%;
+            }
+        }
+    }
+}
